@@ -1,0 +1,252 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* clear fix */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  zoom: 1;
+}
+/* mulai */
+body {
+  background-color: #0f0e0e;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+@font-face {
+  font-family: "Tektur";
+  src: url(Tektur-VariableFont_wdth\wght.ttf) format(truetype);
+}
+.header {
+  width: 100%;
+  height: 695px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.navbar {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.navbar span a {
+  width: 80px;
+  height: 25px;
+  margin: 10px;
+  margin-right: -5px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+  padding: 2px;
+  display: inline-block;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px 20px #413f42;
+  color: white;
+  text-decoration: none;
+  transition: 0.6s;
+}
+.navbar span a:hover {
+  box-shadow: 0 0 5px 2px #c147e9, -5px -5px 10px rgba(0, 0, 255, 0.4),
+    5px 5px 10px rgba(255, 0, 0, 0.4);
+}
+.navbar span a:active {
+  color: #c147e9;
+  transition: 0s;
+}
+.nama {
+  width: 350px;
+  height: 100px;
+  font-family: "Tektur";
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin: 20px;
+}
+.nama span {
+  color: inherit;
+  filter: drop-shadow(0 1px 5px#c147e9);
+}
+.img {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  margin: 80px;
+  filter: blur(5px);
+  transition: 1s;
+}
+.img:hover {
+  filter: blur(0) drop-shadow(0 0 5px#c147e9);
+  box-shadow: -5px -5px 10px rgba(0, 0, 255, 0.4),
+    5px 5px 10px rgba(255, 0, 0, 0.4);
+}
+.orb {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 100px;
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 60px #c147e9,
+    inset -20px 0 60px rgba(0, 0, 255, 0.4), inset 20px 0 300px #c147e9,
+    inset -20px 0 300px rgba(0, 0, 255, 0.4), 0 0 50px #fff,
+    -10px 0 60px #c147e9, 10px 0 60px rgba(0, 0, 255, 0.4);
+  animation: orb 2s linear infinite;
+}
+@keyframes orb {
+  0% {
+    top: 20px;
+  }
+  25% {
+    top: 22px;
+  }
+  50% {
+    top: 30px;
+  }
+  75% {
+    top: 27px;
+  }
+  100% {
+    top: 20px;
+    transform: rotate(360deg);
+  }
+}
